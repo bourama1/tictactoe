@@ -1,0 +1,9 @@
+[project]
+name = "tictactoe"
+version = "0.1.0"
+description = "Tic Tac Toe AI game implementation for CS50 AI course in Python using Pygame."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pygame>=2.6.1",
+]

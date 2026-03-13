@@ -112,11 +112,9 @@ def minimax(board):
     curr_player = player(board)
 
     if curr_player == X:
-        # X wants to maximize utility
         _, move = max_value(board, float("-inf"), float("inf"))
         return move
     else:
-        # O wants to minimize utility
         _, move = min_value(board, float("-inf"), float("inf"))
         return move
 

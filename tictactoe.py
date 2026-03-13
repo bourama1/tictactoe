@@ -49,10 +49,10 @@ def result(board, action):
     """
     Returns the board that results from making move (i, j) on the board.
     """
-    i, j = action
-    if board[i][j] != EMPTY:
+    if action not in actions(board):
         raise ValueError("Invalid action")
 
+    i, j = action
     # Create a new board with the move applied
     new_board = [row[:] for row in board]
     new_board[i][j] = player(board)
